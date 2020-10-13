@@ -13,6 +13,7 @@
 		2AA1C212253550D900A47A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA1C211253550D900A47A61 /* Assets.xcassets */; };
 		2AA1C215253550D900A47A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA1C213253550D900A47A61 /* LaunchScreen.storyboard */; };
 		2AA1C2222535546B00A47A61 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA1C2212535546B00A47A61 /* CloudKit.framework */; };
+		2AA1C22E2535565900A47A61 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA1C22D2535565900A47A61 /* Hype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2AA1C216253550D900A47A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AA1C21F2535546800A47A61 /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
 		2AA1C2212535546B00A47A61 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		2AA1C22D2535565900A47A61 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		2AA1C229253554FD00A47A61 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2AA1C22D2535565900A47A61 /* Hype.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				2AA1C209253550D600A47A61 /* AppDelegate.swift in Sources */,
 				2AA1C20B253550D600A47A61 /* SceneDelegate.swift in Sources */,
+				2AA1C22E2535565900A47A61 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +367,7 @@
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = Hype/Info.plist;
+				INFOPLIST_FILE = Hype/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +387,7 @@
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = Hype/Info.plist;
+				INFOPLIST_FILE = Hype/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
