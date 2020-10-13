@@ -19,7 +19,7 @@ class Hype {
     let timestamp: Date
     let recordID: CKRecord.ID
     
-    init(body: String, timestamp: Date, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
+    init(body: String, timestamp: Date = Date(), recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         self.body = body
         self.timestamp = timestamp
         self.recordID = recordID
