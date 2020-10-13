@@ -37,6 +37,13 @@ extension Hype {
     }
 }
 
+/// Conforms Hype class to Dquatable
+extension Hype: Equatable {
+    static func == (lhs: Hype, rhs: Hype) -> Bool {
+        return lhs.timestamp == rhs.timestamp
+    }
+}
+
 /// Creates a CKRecord from a Hype object
 extension CKRecord {
     convenience init(hype: Hype) {

@@ -11,7 +11,7 @@
         <!--Feed-->
         <scene sceneID="qQW-1s-Ycb">
             <objects>
-                <viewController id="Imn-A8-HTN" sceneMemberID="viewController">
+                <viewController id="Imn-A8-HTN" customClass="HypeListViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bgl-Ak-wEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,8 +57,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="m8i-Z0-4je">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1UD-Og-yZ3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1UD-Og-yZ3">
+                            <connections>
+                                <action selector="addHypeButtonTapped:" destination="Imn-A8-HTN" id="Y2v-kK-Y9D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="hypeTableView" destination="POG-VH-zJj" id="0Iw-Oh-cNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9E2-G8-Qfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
